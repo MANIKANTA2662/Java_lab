@@ -50,7 +50,5 @@ public class MatrixMultiplication {
             }
             System.out.println();
         }
-        
-        scanner.close();
     }
 }
