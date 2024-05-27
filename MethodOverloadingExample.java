@@ -1,24 +1,9 @@
-public class MethodOverloadingExample {
-    static void display() {
-        System.out.println("No parameters");
-    }
-    static void display(int num) {
-        System.out.println("Parameter: " + num);
-    }
-    static void display(int num1, int num2) {
-        System.out.println("Parameters: " + num1 + ", " + num2);
-    }
-
-    
-    static void display(String str) {
-        System.out.println("Parameter: " + str);
-    }
-
-    public static void main(String[] args) {
-       
-        display();            
-        display(10);         
-        display(20, 30);      
-        display("Hello");     
-    }
-}
+    class Adder{  
+    static int add(int a,int b){return a+b;}  
+    static int add(int a,int b,int c){return a+b+c;}  
+    }  
+    class MethodOverloadingExample{  
+    public static void main(String[] args){  
+    System.out.println(Adder.add(11,11));  
+    System.out.println(Adder.add(11,11,11));  
+    }}  
